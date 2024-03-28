@@ -35,14 +35,33 @@ This project is a clone of Instagram, where users can upload photos with descrip
    npm install
    ```
 
-3. Start the development server:
+3. Env File
+
+- Env for client/assign
+  Sign up to clerk and create your own User Management Platform and get api key and then create .env.local
+
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=<YOUR_PUBLIC_KEY>
+CLERK_SECRET_KEY=<YOUR_SECRET_KEY>
+```
+
+- Env for server
+  create mongodb database and create .env file in server
+
+```bash
+PORT=5000
+DATABASE=<YOUR_DATABASE_LINK>
+NODE_ENV=development
+```
+
+4. Start the development server:
 
    ```
    cd server
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 ## Usage
 
